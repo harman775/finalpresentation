@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution - GHU Alumni Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">GHU Alumni Connect</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="problem.html" class="nav-link">Problem</a></li>
+                <li><a href="solution.html" class="nav-link active">Solution</a></li>
+                <li><a href="architecture.html" class="nav-link">Architecture</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="ethics.html" class="nav-link">Ethics</a></li>
+                <li><a href="reflection.html" class="nav-link">Reflection</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="page-badge">Innovation</span>
+            <h1 class="page-title">Proposed Solution</h1>
+            <p class="page-subtitle">A comprehensive analytics platform for alumni engagement</p>
+        </div>
+    </section>
+
+    <section class="section solution-section">
+        <div class="container">
+            <div class="solution-intro">
+                <div class="solution-text">
+                    <h3>A Comprehensive Analytics Platform</h3>
+                    <p class="lead-text">The GHU Alumni Connect Analytics Platform is a full-stack web application that centralizes alumni data and generates ongoing insights through intuitive dashboards.</p>
+                    <p>It comprises three integrated portals sharing a common database and user authentication system.</p>
+                </div>
+                <div class="solution-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Dashboard" class="img-cover">
+                </div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-number">01</div>
+                        <h3>Administrator Dashboard</h3>
+                    </div>
+                    <div class="feature-body">
+                        <ul>
+                            <li>Real-time analytics with 6 interactive visualizations</li>
+                            <li>Alumni distribution by industry (bar charts)</li>
+                            <li>Graduation trends (area charts)</li>
+                            <li>Average salary by major (horizontal bar charts)</li>
+                            <li>Dropdown filters for major and year range</li>
+                            <li>Key metrics: Total alumni, active %, average salary, donations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-number">02</div>
+                        <h3>Alumni Portal</h3>
+                    </div>
+                    <div class="feature-body">
+                        <ul>
+                            <li>Personalized dashboard with profile overview</li>
+                            <li>Education, current job, engagement metrics</li>
+                            <li>Event registration for networking, workshops, reunions</li>
+                            <li>Predictions tab with donor likelihood scores</li>
+                            <li>Mentor match scores based on engagement history</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-number">03</div>
+                        <h3>Employer Portal</h3>
+                    </div>
+                    <div class="feature-body">
+                        <ul>
+                            <li>Candidate search with advanced filtering</li>
+                            <li>Filter by major, industry, GPA, years of experience</li>
+                            <li>Candidate cards with profile summaries</li>
+                            <li>Direct "Contact Candidate" functionality</li>
+                            <li>Pre-populated message templates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-stack">
+                <h3>Technology Stack</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <div class="tech-icon react-icon"></div>
+                        <div class="tech-name">React</div>
+                        <div class="tech-desc">Frontend SPA with Recharts & Tailwind CSS</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon fastapi-icon"></div>
+                        <div class="tech-name">FastAPI</div>
+                        <div class="tech-desc">High-performance RESTful APIs</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon mongo-icon"></div>
+                        <div class="tech-name">MongoDB</div>
+                        <div class="tech-desc">NoSQL database for flexible schema</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="objectives">
+                <h3>Key Objectives</h3>
+                <div class="objectives-grid">
+                    <div class="objective-item">
+                        <span class="objective-label">Data Consolidation</span>
+                        <span class="objective-value">2,000 alumni records, 99.9% uptime</span>
+                    </div>
+                    <div class="objective-item">
+                        <span class="objective-label">Analysis Performance</span>
+                        <span class="objective-value">Query results < 1 second</span>
+                    </div>
+                    <div class="objective-item">
+                        <span class="objective-label">Engagement Increase</span>
+                        <span class="objective-value">40% event registration boost</span>
+                    </div>
+                    <div class="objective-item">
+                        <span class="objective-label">Recruitment Efficiency</span>
+                        <span class="objective-value">60% reduction in search time</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-navigation">
+                <a href="problem.html" class="btn-nav btn-prev">← Previous: Problem</a>
+                <a href="architecture.html" class="btn-nav btn-next">Next: Architecture →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GHU Alumni Connect</h3>
+                    <p>Master's Research Project 2025</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Global Horizon University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
