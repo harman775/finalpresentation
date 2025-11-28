@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture - GHU Alumni Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">GHU Alumni Connect</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="problem.html" class="nav-link">Problem</a></li>
+                <li><a href="solution.html" class="nav-link">Solution</a></li>
+                <li><a href="architecture.html" class="nav-link active">Architecture</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="ethics.html" class="nav-link">Ethics</a></li>
+                <li><a href="reflection.html" class="nav-link">Reflection</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="page-badge">Technical Design</span>
+            <h1 class="page-title">Architecture & Data Design</h1>
+            <p class="page-subtitle">System architecture and data structure overview</p>
+        </div>
+    </section>
+
+    <section class="section architecture-section">
+        <div class="container">
+            <div class="architecture-intro">
+                <p class="lead-text">The platform uses a three-tier architecture: Presentation, Application, and Data layers, designed for scalability, security, and maintainability.</p>
+            </div>
+            
+            <div class="architecture-diagram">
+                <h3>Enterprise Architecture</h3>
+                <div class="diagram-container">
+                    <img src="https://customer-assets.emergentagent.com/job_vizzu-research/artifacts/7n8id2qo_image.png" alt="Enterprise Architecture Diagram" class="architecture-img">
+                    <div class="diagram-overlay">
+                        <p>Three-tier architecture with React SPA, FastAPI backend, and MongoDB database</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="architecture-layers">
+                <div class="layer-card">
+                    <h4>Presentation Layer</h4>
+                    <p>React Single Page Application with responsive design, interactive visualizations, and real-time updates</p>
+                </div>
+                <div class="layer-card">
+                    <h4>Application Layer</h4>
+                    <p>FastAPI backend providing 15+ RESTful endpoints with automatic documentation and data validation</p>
+                </div>
+                <div class="layer-card">
+                    <h4>Data Layer</h4>
+                    <p>MongoDB with three main collections: Alumni, Events, and Messages, with indexed fields for performance</p>
+                </div>
+            </div>
+            
+            <div class="er-diagram">
+                <h3>Entity Relationship Diagram</h3>
+                <div class="er-container">
+                    <img src="https://customer-assets.emergentagent.com/job_4cb2830b-c796-4a30-97e2-a106989492ca/artifacts/cwq6lw1m_2a68cced-f24a-4c8a-b354-9c6cea403216%20%281%29.jpeg" alt="ER Diagram" class="er-img">
+                </div>
+            </div>
+            
+            <div class="data-design">
+                <h3>Data Design Approach</h3>
+                <div class="data-grid">
+                    <div class="data-card">
+                        <h4>Synthetic Data Strategy</h4>
+                        <p>Due to privacy regulations (FERPA, GDPR), a synthetic-first approach generates data reflecting U.S. higher education patterns without using real personal identifiers.</p>
+                    </div>
+                    <div class="data-card">
+                        <h4>Data Categories</h4>
+                        <ul>
+                            <li>Demographic information</li>
+                            <li>Academic history</li>
+                            <li>Employment information</li>
+                            <li>Skills ratings</li>
+                            <li>Engagement behaviors</li>
+                            <li>Mentorship characteristics</li>
+                            <li>Privacy/consent metadata</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="infrastructure">
+                <h3>Technology Infrastructure</h3>
+                <p>Runs on Kubernetes with nginx ingress routing. Redis caching for optimization. StatefulSets ensure MongoDB data persistence. Horizontal Pod Autoscaling (HPA) provides resilience and scalability.</p>
+            </div>
+
+            <div class="page-navigation">
+                <a href="solution.html" class="btn-nav btn-prev">← Previous: Solution</a>
+                <a href="dashboard.html" class="btn-nav btn-next">Next: Dashboard →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GHU Alumni Connect</h3>
+                    <p>Master's Research Project 2025</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Global Horizon University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
